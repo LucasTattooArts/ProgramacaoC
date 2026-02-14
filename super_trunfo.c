@@ -11,6 +11,10 @@ int main(){
     float PIB1, PIB2;
     int PtTuristico1, PtTuristico2;
 
+//Variáveis nível aventureiro
+    float DensidadePop1, DensidadePop2;
+    float PIBPerCapita1, PIBPerCapita2;
+
 //Entrada de Dados Carta 1
     printf("Dados da Carta 1 \n");
     printf("Digite uma letra de A a H (representando um dos oito estados): \n");
@@ -30,6 +34,11 @@ int main(){
     scanf("%d", &PtTuristico1);
     getchar();
     printf ("\n");
+
+//Cálculos Nível Aventureiro
+    DensidadePop1 = Populacao1 / Area1;
+    PIBPerCapita1 = (PIB1 * pow(10,9)) / Populacao1;
+
 //Saida de Dados da Carta 1
     printf("Carta 1: \n");
     printf("Estado: %c \n", Estado1);
@@ -37,8 +46,11 @@ int main(){
     printf("Nome da Cidade: %s", Nome1);
     printf("População: %d \n", Populacao1);
     printf("Área: %.2f km² \n", Area1);
-    printf("PIB:R$ %.2f bilhões \n", PIB1);
+    printf("PIB: R$%.2f bilhões \n", PIB1);
     printf("Número de Pontos Turísticos: %d \n", PtTuristico1);
+//Saída de Dados Nível Aventureiro
+    printf("Densidade Populacional: %.2f hab/km² \n", DensidadePop1);
+    printf("PIB per Capita: R$%.2f \n", PIBPerCapita1);
     printf("\n");
 
 //Entrada de Dados Carta 2
@@ -61,6 +73,10 @@ int main(){
     getchar();
     printf ("\n");
 
+////Cálculos Nível Aventureiro
+    DensidadePop2 = Populacao2 / Area2;
+    PIBPerCapita2 = (PIB2 * pow(10,9)) / Populacao2;
+
 //Saida de Dados da Carta 2
     printf("Carta 2: \n");
     printf("Estado: %c \n", Estado2);
@@ -70,6 +86,9 @@ int main(){
     printf("Área: %.2f km² \n", Area2);
     printf("PIB: R$%.2f bilhões \n", PIB2);
     printf("Número de Pontos Turísticos: %d \n", PtTuristico2);
+//Saída de Dados Nível Aventureiro
+    printf("Densidade Populacional: %.2f hab/km² \n", DensidadePop2);
+    printf("PIB per Capita: R$%.2f \n", PIBPerCapita2);
 
     return 0;
 }
