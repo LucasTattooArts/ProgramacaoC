@@ -40,7 +40,7 @@ int main(){
 
 //Cálculos Nível Aventureiro
     DensidadePop1 = Populacao1 / Area1;
-    PIBPerCapita1 = (PIB1 * pow(10,9)) / Populacao1;
+    PIBPerCapita1 = (PIB1 * 1e9f) / Populacao1;
 
 //Cálculos Nível Mestre
     SuperPoder1 = (float) Populacao1 + Area1 + PIB1 + PtTuristico1 + PIBPerCapita1 + (1/DensidadePop1);
@@ -83,7 +83,7 @@ int main(){
 
 //Cálculos Nível Aventureiro
     DensidadePop2 = Populacao2 / Area2;
-    PIBPerCapita2 = (PIB2 * pow(10,9)) / Populacao2;
+    PIBPerCapita2 = (PIB2 * 1e9f) / Populacao2;
 
 //Cálculos Nível Mestre
     SuperPoder2 = (float) Populacao2 + Area2 + PIB2 + PtTuristico2 + PIBPerCapita2 + (1/DensidadePop2);
